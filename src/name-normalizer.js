@@ -9,48 +9,8 @@
 const PREFIXES = ['mr', 'mrs', 'ms', 'miss', 'dr', 'prof', 'rev', 'hon'];
 const SUFFIXES = ['jr', 'sr', 'ii', 'iii', 'iv', 'v', 'md', 'phd', 'esq'];
 
-// Common name variations/nicknames
-const NAME_VARIATIONS = {
-  'william': ['will', 'bill', 'billy', 'willy'],
-  'robert': ['rob', 'bob', 'bobby'],
-  'richard': ['rick', 'dick', 'richie', 'ricky'],
-  'michael': ['mike', 'mikey', 'mick'],
-  'james': ['jim', 'jimmy', 'jamie'],
-  'joseph': ['joe', 'joey', 'jo'],
-  'thomas': ['tom', 'tommy'],
-  'christopher': ['chris', 'topher'],
-  'charles': ['chuck', 'charlie', 'chas'],
-  'daniel': ['dan', 'danny'],
-  'matthew': ['matt', 'matty'],
-  'anthony': ['tony', 'ant'],
-  'steven': ['steve', 'stevie'],
-  'kenneth': ['ken', 'kenny'],
-  'edward': ['ed', 'eddie', 'ted', 'teddy'],
-  'donald': ['don', 'donny'],
-  'elizabeth': ['liz', 'lizzy', 'beth', 'betty', 'eli'],
-  'jennifer': ['jen', 'jenny'],
-  'katherine': ['kathy', 'kate', 'katie', 'katy'],
-  'margaret': ['maggie', 'meg', 'megan', 'peggy'],
-  'patricia': ['pat', 'patty', 'trish'],
-  'deborah': ['deb', 'debbie'],
-  'jessica': ['jess', 'jessie'],
-  'sandra': ['sandy'],
-  'barbara': ['barb', 'barbie'],
-  'stephanie': ['steph', 'stephy'],
-  'victoria': ['vicky', 'tori'],
-  'jonathan': ['jon', 'jonny'],
-  'nicholas': ['nick', 'nicky'],
-  'jeffrey': ['jeff'],
-  'benjamin': ['ben', 'benny'],
-  'timothy': ['tim', 'timmy'],
-  'gregory': ['greg', 'gregg'],
-  'raymond': ['ray'],
-  'samuel': ['sam', 'sammy'],
-  'andrew': ['andy', 'drew'],
-  'alexander': ['alex', 'al'],
-  'david': ['dave', 'davey'],
-  'joshua': ['josh']
-};
+// Import name variations from dedicated module
+const NAME_VARIATIONS = require('./name-variations');
 
 /**
  * Clean a name string by removing special characters,
