@@ -4,9 +4,9 @@
  * Combines the strengths of natural.js and Enhanced Name Matcher
  * for optimal name matching performance.
  */
-const natural = require('natural');
-const EnhancedMatcher = require('./enhanced-matcher');
-const { parseName, reorderNameIfNeeded } = require('./name-normalizer');
+import natural from 'natural';
+import EnhancedMatcher from './enhanced-matcher.js';
+import { parseName, reorderNameIfNeeded } from './name-normalizer.js';
 
 class EnhancedNaturalMatcher {
   /**
@@ -126,4 +126,4 @@ class EnhancedNaturalMatcher {
   }
 }
 
-module.exports = EnhancedNaturalMatcher;
+export default EnhancedNaturalMatcher;

@@ -1,13 +1,13 @@
 /**
  * Example usage of the Enhanced Name Matcher library
  */
-const { 
+import { 
   EnhancedNaturalMatcher, 
   match, 
   isMatch, 
   matchGroup,
   NameNormalizer 
-} = require('./index');
+} from './index.js';
 
 console.log('Enhanced Name Matcher - Example Usage\n');
 

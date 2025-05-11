@@ -2,10 +2,7 @@
  * Enhanced name matcher that combines multiple approaches 
  * specifically optimized for common name matching challenges
  */
-const {
-  parseName,
-  getNameVariations
-} = require('./name-normalizer');
+import { parseName, getNameVariations } from './name-normalizer.js';
 
 class EnhancedMatcher {
   constructor() {
@@ -216,4 +213,4 @@ class EnhancedMatcher {
   }
 }
 
-module.exports = EnhancedMatcher;
+export default EnhancedMatcher;

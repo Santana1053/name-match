@@ -10,7 +10,7 @@ const PREFIXES = ['mr', 'mrs', 'ms', 'miss', 'dr', 'prof', 'rev', 'hon'];
 const SUFFIXES = ['jr', 'sr', 'ii', 'iii', 'iv', 'v', 'md', 'phd', 'esq'];
 
 // Import name variations from dedicated module
-const NAME_VARIATIONS = require('./name-variations');
+import NAME_VARIATIONS from './name-variations.js';
 
 /**
  * Clean a name string by removing special characters,
@@ -215,7 +215,7 @@ function normalizeNameOrder(name) {
   return parseName(name).normalized;
 }
 
-module.exports = {
+export {
   cleanName,
   parseName,
   reorderNameIfNeeded,

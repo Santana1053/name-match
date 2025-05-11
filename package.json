@@ -2,9 +2,10 @@
   "name": "name-match",
   "version": "1.0.4",
   "description": "A robust name matching library combining multiple algorithms for optimal performance",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "build": "babel src -d lib",
     "lint": "eslint src",
     "prepare": "node prepare-publish.js",

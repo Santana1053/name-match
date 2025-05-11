@@ -22,7 +22,7 @@ npm install name-match
 ## Quick Start
 
 ```javascript
-const { match, isMatch } = require('name-match');
+import { match, isMatch } from 'name-match';
 
 // Get similarity score (0-1)
 const score = match('John Smith', 'Smith, John');
@@ -38,7 +38,7 @@ console.log(matched); // true
 ### Creating a Matcher Instance
 
 ```javascript
-const { EnhancedNaturalMatcher } = require('name-match');
+import { EnhancedNaturalMatcher } from 'name-match';
 
 // Create matcher with custom threshold
 const matcher = new EnhancedNaturalMatcher({ threshold: 0.75 });
@@ -55,7 +55,7 @@ console.log(matched); // true
 ### Matching Groups of Names
 
 ```javascript
-const { matchGroup } = require('name-match');
+import { matchGroup } from 'name-match';
 
 // Check if all names in a group refer to the same person
 const nameGroup = [
@@ -73,7 +73,7 @@ console.log(result.matches); // Detailed match information for each pair
 ### Name Normalization
 
 ```javascript
-const { NameNormalizer } = require('name-match');
+import { NameNormalizer } from 'name-match';
 
 // Parse a name into components
 const parsed = NameNormalizer.parseName('Dr. John William Smith Jr.');

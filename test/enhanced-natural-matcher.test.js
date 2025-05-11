@@ -1,4 +1,4 @@
-const { EnhancedNaturalMatcher, match, isMatch, matchGroup } = require('../index');
+import { EnhancedNaturalMatcher, match, isMatch, matchGroup } from '../index.js';
 
 // Test cases - pairs of names that should match
 const matchingPairs = [

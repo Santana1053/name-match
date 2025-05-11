@@ -1147,4 +1147,4 @@ const data = {
   "zephaniah": ["zeph"]
 };
 
-module.exports = data;
+export default data;
